@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Wind Speed Charts
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class = "chart">
+   
+      <ion-row >
+          <ion-icon class = "iconkeypad" name="keypad"></ion-icon>
+      </ion-row>
+      <div class = "panal">
+          <h4>Today</h4>
+          <p>Air:  25F</p>
+          <p>Water:  25F</p>
+          <p>Wind:  10m/s</p>
+      </div>
+      
+     <ion-row class="chart-wrapper">
+        <canvas id="lineChart" #lineChart>
+        </canvas>
+     </ion-row>
+     <ion-row>
+       <button ion-button style ="background-color:dodgerblue"(click)="goHomePage()">Home</button>
+       <button ion-button style ="background-color:dodgerblue"(click)="goAirPage()">Air</button>
+       <button ion-button style ="background-color:dodgerblue" (click)="goWaterPage()">Water</button>
+       <button ion-button style="background-color:aqua" >Wind</button>
+      </ion-row>
+     
+  
+  </ion-content>
